@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/f67ad90170.js" crossorigin="anonymous"></script>
+    <title>Instagram Feed</title>
+</head>
+<body class="bg-black">
+
+    <!-- Navegador-->
+
+
+    <div class="container bg-light w-75 p-3">
+        <div class="row">
+            <div class="col-8 d-flex">
+            <i class="fa-brands fa-instagram fs-5 mt-1"></i>
+            <h5 class="title ms-1 "><span>Instagram</span></h5>
+            </div>
+            
+            <div class="col-4  d-flex justify-content-end gap-2" >
+                <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Create a new post</button>
+                
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <form>
+                              <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Caption:</label>
+                                <textarea class="form-control" id="message-text" placeholder="Add the caption of your post here"></textarea>
+                              </div>
+                             
+                              <button type="button" class="btn btn-light"><i class="fa-solid fa-camera"></i></button>
+                              <button type="button" class="btn btn-light"><i class="fa-solid fa-location-dot"></i></button>
+                            </form>
+                             
+                        </div>
+                        <div class="modal-footer">
+
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-success">Publish</button>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                              
+                            
+
+                <div class="dropdown">
+                        <button type="button" class="btn btn-secondary btn-sm">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="true"><i class="fa-solid fa-gear fs-6"></i></a>
+                        <ul class="dropdown-menu dropdown-menu-lg-end">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-danger" href="#">Log Out</a></li>
+                        </ul>
+                    </div>      
+            </div>
+        </div>
+        
+    </div>
+                    
+           
+    <!-- Tab central e imagenes-->     
+            
+        
+    
+    <div class="container w-75 p-3 py-4 bg-white"> 
+        
+            <div class="navegador">
+                <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+            
+                    <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+                    </li>
+            
+                    <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+                    </li>
+            
+                </ul>
+            </div>  
+          
+          <div class="tab-content" id="myTabContent">
+
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+
+                <div class="row d-flex align-self-center">
+                    <div class="col-4">
+                            
+                            <img src="https://static.vecteezy.com/system/resources/previews/002/492/354/non_2x/abstract-cat-pet-portrait-painting-vector.jpg" class="figure-img img-fluid" alt="...">
+                            
+                    </div>
+                           
+                    <div class="col-4">
+
+                        <img src="https://static.vecteezy.com/system/resources/previews/002/492/354/non_2x/abstract-cat-pet-portrait-painting-vector.jpg" class="figure-img img-fluid" alt="...">
+
+                    </div>
+                    <div class="col-4">
+
+                        <img src="https://static.vecteezy.com/system/resources/previews/002/492/354/non_2x/abstract-cat-pet-portrait-painting-vector.jpg" class="figure-img img-fluid" alt="...">
+                        
+                    </div>
+                </div>
+
+                <div class="row d-flex align-self-center">
+                    <div class="col-4">
+                        <img src="https://static.vecteezy.com/system/resources/previews/002/492/354/non_2x/abstract-cat-pet-portrait-painting-vector.jpg" class="figure-img img-fluid" alt="...">
+                    </div>
+
+
+                    <div class="col-4">
+
+                        <img src="https://static.vecteezy.com/system/resources/previews/002/492/354/non_2x/abstract-cat-pet-portrait-painting-vector.jpg" class="figure-img img-fluid " alt="...">
+
+                    </div>
+                    <div class="col-4">
+
+                        <img src="https://static.vecteezy.com/system/resources/previews/002/492/354/non_2x/abstract-cat-pet-portrait-painting-vector.jpg" class="figure-img img-fluid" alt="...">
+
+                    </div>
+
+                    
+                </div>
+                
+                <div class="row d-flex align-self-center">
+                    <div class="col-4">
+                            
+                            <img src="https://static.vecteezy.com/system/resources/previews/002/492/354/non_2x/abstract-cat-pet-portrait-painting-vector.jpg" class="figure-img img-fluid" alt="...">
+                            
+                    </div>
+                           
+                    <div class="col-4">
+
+                        <img src="https://static.vecteezy.com/system/resources/previews/002/492/354/non_2x/abstract-cat-pet-portrait-painting-vector.jpg" class="figure-img img-fluid" alt="...">
+
+                    </div>
+                    <div class="col-4">
+
+                        <img src="https://static.vecteezy.com/system/resources/previews/002/492/354/non_2x/abstract-cat-pet-portrait-painting-vector.jpg" class="figure-img img-fluid" alt="...">
+                        
+                    </div>
+                
+                </div>
+            </div>
+            
+            <!-- Imagenes en Vertical-->
+
+            <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+
+                <div class="row">
+                    <div class="col-12  d-flex justify-content-center mt-4">
+                        <div class="card border-light mb-3" style="max-width: 34rem;">
+                            <div class="card-header bg-transparent border-light d-flex justify-content-between">
+                                <h5>My Crazy cat Spark!</h5>
+                                <p class="fs-6">08/26</p>
+                            </div>
+                            
+                            <div class="img-fluid">
+                                <img  src="https://static.vecteezy.com/system/resources/previews/002/492/354/non_2x/abstract-cat-pet-portrait-painting-vector.jpg" class="img-fluid">
+                            </div>
+                            <div class="card-footer bg-transparent border-light">
+                                <h6>204 Likes</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea rem ipsam ipsum beatae quo maxime.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12  d-flex justify-content-center mt-4">
+                        <div class="card border-light mb-3" style="max-width: 34rem;">
+                            <div class="card-header bg-transparent border-light d-flex justify-content-between">
+                                <h5>The greatness of Croatia</h5>
+                                <p class="fs-6">04/09</p>
+                            </div>
+                            
+                            <div class="img-fluid">
+                                <img  src="https://res.cloudinary.com/worldpackers/image/upload/c_fill,f_auto,q_auto,w_1024/v1/guides/article_cover/q2kiggsw5sokq7tc8blp" class="img-fluid">
+                            </div>
+                            <div class="card-footer bg-transparent border-light">
+                                <h6>26985 Likes</h6>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, cumque?</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12  d-flex justify-content-center mt-4">
+                        <div class="card border-light mb-3" style="max-width: 34rem;">
+                            <div class="card-header bg-transparent border-light d-flex justify-content-between">
+                                <h5>Amazing GOAL by Cristiano!</h5>
+                                <p class="fs-6">06/10</p>
+                            </div>
+                            
+                            <div class="img-fluid">
+                                <img  src="https://cnnespanol.cnn.com/wp-content/uploads/2018/04/cristiano-ronaldo-gettyimages-941520068-e1522891009139.jpg?quality=100&strip=info" class="img-fluid">
+                            </div>
+                            <div class="card-footer bg-transparent border border-0">
+                                <h6>204 Likes</h6>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, quam? Obcaecati, numquam.</p>
+                            </div>
+                          </div>
+                    </div>
+                    
+                </div>
+                   
+
+            </div>
+            
+          
+       
+            
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+       
+</body>
+</html>
